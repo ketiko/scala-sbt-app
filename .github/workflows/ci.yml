@@ -26,6 +26,8 @@ jobs:
           distribution: "corretto"
           java-version: "21"
 
+      - uses: sbt/setup-sbt@v1
+
       - name: Download Dependencies
         run: sbt update
 
